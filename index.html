@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Barbearia - Agendamento</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <img src="./assets/Logo-barber.png" alt="Logo-barber" width="180">
+  </header>
+
+  <main>
+    <section class="form-container">
+      <h2>Agendamento</h2>
+      <form id="form-agendamento">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome"/>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" placeholder="(99) 99999-9999"/>
+
+        <!-- Campo de Horário, igual aos outros -->
+        <div class="campo-formulario">
+        <label for="horario">Horário</label>
+        <input type="text" id="horario" placeholder="Clique para escolher um horário" readonly>
+        </div>
+
+        <!-- Modal de horários -->
+        <div id="modal-horarios">
+            <div class="modal-conteudo">
+                <h3>Escolha um horário:</h3>
+                <ul id="lista-horarios"></ul>
+                <button id="fechar-modal">Cancelar</button>
+            </div>
+        </div>
+
+        <label for="servico">Serviço:</label>
+        <select id="servico">
+          <option value="">-- Escolha um serviço --</option>
+          <option value="Corte Masculino">Corte Masculino</option>
+          <option value="Barba">Barba</option>
+          <option value="Corte + Barba">Corte + Barba</option>
+          <option value="Sobrancelha">Sobrancelha</option>
+        </select>
+
+        <button type="submit">Agendar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 BarberShop</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
