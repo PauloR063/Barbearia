@@ -73,6 +73,14 @@ input[readonly] {
   background-color: #f8f8f8;
 }
 
+#horario{
+  font-size: 18px;
+}
+#data{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
 /* Modal */
 #modal-horarios {
   position: fixed;
